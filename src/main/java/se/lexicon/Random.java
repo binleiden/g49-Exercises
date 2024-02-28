@@ -12,15 +12,17 @@ public class Random {
         // generate random numbers within 1 to 500
         int rand = (int) (Math.random() * range) + min;
         //user input
-        Scanner scanner = new Scanner(System.in);
-
+       Scanner scanner = new Scanner(System.in);
+        System.out.println("Make a guess");
+        int userInput;
+        userInput = scanner.nextInt();
         // Output is different everytime this code is executed
-        System.out.println(rand);
+        //System.out.println(rand);
 
-        while (userInput != rand){
-            System.out.println("Make a guess");
+        // Game loop
+        while (rand != userInput){
+            System.out.println("wrong guess again");
             userInput = scanner.nextInt();{
-
             } if (userInput < rand){
                 System.out.println("To low");
 
