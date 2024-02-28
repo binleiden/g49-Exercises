@@ -1,6 +1,6 @@
 package se.lexicon;
 
-public class Operators {
+public class Exercise3 {
     public static void main(String[] args) {
         int num1 = 54;
         int num2 = 38;

@@ -2,7 +2,7 @@ package se.lexicon;
 
 import java.util.Scanner;
 
-public class Random {
+public class Exercise8 {
     public static void main(String[] args) {
         // define the range
         int max = 500;
@@ -12,7 +12,7 @@ public class Random {
         // generate random numbers within 1 to 500
         int rand = (int) (Math.random() * range) + min;
         //user input
-       Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in);
         System.out.println("Make a guess");
         int userInput;
         userInput = scanner.nextInt();
@@ -20,10 +20,12 @@ public class Random {
         //System.out.println(rand);
 
         // Game loop
-        while (rand != userInput){
+        while (rand != userInput) {
             System.out.println("wrong guess again");
-            userInput = scanner.nextInt();{
-            } if (userInput < rand){
+            userInput = scanner.nextInt();
+            {
+            }
+            if (userInput < rand) {
                 System.out.println("To low");
 
             } else if (userInput > rand) {

@@ -2,7 +2,7 @@ package se.lexicon;
 
 import java.util.Scanner;
 
-public class Calculator {
+public class Exercise6 {
     public static void main(String[] args) {
         System.out.println("Lets do some math!");
         System.out.println("Enter two numbers and ill do the math for you!");
