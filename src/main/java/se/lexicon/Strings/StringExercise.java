@@ -1,9 +1,5 @@
 package se.lexicon.Strings;
 
-import org.w3c.dom.ls.LSOutput;
-
-import java.io.PrintStream;
-
 public class StringExercise {
 
     static String getExercise1 = "java";
@@ -14,7 +10,7 @@ public class StringExercise {
     static String getExercise6 = "Java is the worst programming language!";
     static String getExercise7 = "\tJ\ta\tv\ta\t";
     static int getExercise8 = 20;
-    static String result = Integer.toString(getExercise8) + "20";
+    static String result = getExercise8 + "20";
 
 
     public static void main(String[] args) {
@@ -46,7 +42,7 @@ public class StringExercise {
         }
         //exercise 10
         String str = "ThisShouldBeConverted";
-        char ch[] = str.toCharArray();
+        char[] ch = str.toCharArray();
         for (char c : ch) {
             System.out.println(c + " ");
         }
