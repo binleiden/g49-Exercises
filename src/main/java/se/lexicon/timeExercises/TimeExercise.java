@@ -14,15 +14,15 @@ public class TimeExercise {
 
         //Exercise 2
         String custom = today.format(DateTimeFormatter.ofPattern("eeee d MMMM"));
-                System.out.println(custom);
+        System.out.println(custom);
 
         //Exercise 3
-       LocalDate lastMonday = LocalDate.of(2024,2,26);
+        LocalDate lastMonday = LocalDate.of(2024, 2, 26);
 
-       for (int i = 0; i < 7; i++ ){
-           System.out.println(lastMonday);
-           lastMonday = lastMonday.plusDays(1);
-       }
+        for (int i = 0; i < 7; i++) {
+            System.out.println(lastMonday);
+            lastMonday = lastMonday.plusDays(1);
+        }
 
         //Exercise 4
         String dateString = "2024-03-05";
@@ -31,29 +31,29 @@ public class TimeExercise {
         System.out.println("Parsed localDate: " + date);
 
         //Exercise 5
-        LocalDate myBirthDay = LocalDate.of(1983,3,22);
+        LocalDate myBirthDay = LocalDate.of(1983, 3, 22);
 
         DayOfWeek dayOfWeek = myBirthDay.getDayOfWeek();
         System.out.println("My birth day falls on a " + dayOfWeek);
 
         //Exercise 6
-        LocalDate futureMonth = LocalDate.of(2024,3,6);
+        LocalDate futureMonth = LocalDate.of(2024, 3, 6);
         futureMonth = futureMonth.plusYears(10);
         futureMonth = futureMonth.minusMonths(10);
         System.out.println(futureMonth);
 
         //Exercise 7
-        LocalDate from = myBirthDay;
+        LocalDate fromB = myBirthDay;
         LocalDate to = futureMonth;
-        Period period = Period.between(from, to);
+        Period period = Period.between(fromB, to);
         System.out.println(period);
-        System.out.println(period.getYears()+ " years");
-        System.out.println(period.getMonths()+ " months");
-        System.out.println(period.getDays()+ " days");
+        System.out.println(period.getYears() + " years");
+        System.out.println(period.getMonths() + " months");
+        System.out.println(period.getDays() + " days");
 
         //Exercise 8
         LocalDate currentDate = LocalDate.now();
-        Period add = period.of(4,7,29);
+        Period add = period.of(4, 7, 29);
         LocalDate futureDate = currentDate.plus(add);
         System.out.println(futureDate);
 
@@ -77,7 +77,7 @@ public class TimeExercise {
 
         //Exercise 13
         LocalDateTime now = LocalDateTime.now();
-        DateTimeFormatter dateTime = DateTimeFormatter.ofPattern("Y-M-dd, HH:mm");
+        DateTimeFormatter dateTime = DateTimeFormatter.ofPattern("y-M-dd, HH:mm");
         String formatedDateTime = now.format(dateTime);
         System.out.println(formatedDateTime);
 
@@ -95,8 +95,8 @@ public class TimeExercise {
         //Exercise 16
         LocalDate todaysdate = localDateTime.toLocalDate();
         LocalTime timenow = localDateTime.toLocalTime();
-        System.out.println("Todays date extracted: " +todaysdate);
-        System.out.println("Time extracted: " +timenow);
+        System.out.println("Todays date extracted: " + todaysdate);
+        System.out.println("Time extracted: " + timenow);
 
     }
 }
